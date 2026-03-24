@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DiverJet | Viajes low cost</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="cabecera">
       <div class="marca">
+        <p class="etiqueta">VIAJES LOW COST</p>
         <h1>DiverJet</h1>
-        <p>Viajes low cost para escaparte cuando quieras.</p>
+        <p>Escapadas con vuelos y hoteles al mejor precio.</p>
       </div>
       <nav>
         <a href="#destinos">Destinos</a>
@@ -21,47 +28,69 @@
 
     <main>
       <section class="presentacion">
-        <h2>Encuentra tu próxima aventura sin romper el bolsillo</h2>
-        <p>
-          Catálogo de viajes con precio final, días recomendados y nivel de ahorro.
-        </p>
-        <a class="boton" href="#destinos">Ver catálogo</a>
+        <div class="texto-presentacion">
+          <h2>Tu viaje soñado, sin gastar de más</h2>
+          <p>
+            Reserva packs completos con precio final claro, pago fácil y destinos top de Europa.
+          </p>
+          <a class="boton" href="#destinos">Ver catálogo</a>
+        </div>
+        <div class="datos">
+          <article>
+            <p class="numero">+15.000</p>
+            <p>viajeros al mes</p>
+          </article>
+          <article>
+            <p class="numero">Hasta -45%</p>
+            <p>en escapadas flash</p>
+          </article>
+        </div>
       </section>
 
       <section id="destinos">
-        <h2>Catálogo de destinos</h2>
+        <div class="titulo-seccion">
+          <h2>Catálogo de destinos</h2>
+          <p>Elige tu próxima escapada rápida.</p>
+        </div>
+
         <div class="destinos">
           <article class="tarjeta">
+            <span class="chip">Top ventas</span>
             <h3>Lisboa Express</h3>
             <p>3 días · Vuelo + hotel</p>
             <p class="precio">Desde 129€</p>
           </article>
 
           <article class="tarjeta">
+            <span class="chip">Oferta</span>
             <h3>Roma Mini Break</h3>
             <p>4 días · Vuelo + hotel</p>
             <p class="precio">Desde 189€</p>
           </article>
 
           <article class="tarjeta">
+            <span class="chip">Muy pedido</span>
             <h3>Budapest Termal</h3>
             <p>4 días · Vuelo + hotel</p>
             <p class="precio">Desde 169€</p>
           </article>
 
           <article class="tarjeta">
+            <span class="chip">Nuevo</span>
             <h3>Marrakech Color</h3>
             <p>5 días · Vuelo + riad</p>
             <p class="precio">Desde 209€</p>
           </article>
 
           <article class="tarjeta">
+            <span class="chip">Escapada</span>
             <h3>Praga Nocturna</h3>
             <p>3 días · Vuelo + hotel</p>
             <p class="precio">Desde 149€</p>
           </article>
 
           <article class="tarjeta">
+            <span class="chip">Más barato</span>
             <h3>Oporto Relax</h3>
             <p>3 días · Vuelo + hotel</p>
             <p class="precio">Desde 119€</p>
@@ -69,7 +98,7 @@
         </div>
       </section>
 
-      <section id="ofertas">
+      <section id="ofertas" class="bloque-ofertas">
         <h2>Ofertas rápidas de esta semana</h2>
         <ul>
           <li>2x1 en equipaje de mano para Lisboa y Oporto.</li>
@@ -78,9 +107,10 @@
         </ul>
       </section>
 
-      <section id="contacto">
+      <section id="contacto" class="bloque-contacto">
         <h2>Contacto</h2>
-        <p>¿Te ayudamos a elegir? Escríbenos a <a href="mailto:info@diverjet.com">info@diverjet.com</a></p>
+        <p>¿Te ayudamos a elegir? Escríbenos y te pasamos opciones personalizadas.</p>
+        <a class="correo" href="mailto:info@diverjet.com">info@diverjet.com</a>
       </section>
     </main>
 
