@@ -4,118 +4,139 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DiverJet | Viajes low cost</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="cabecera">
-      <div class="marca">
-        <p class="etiqueta">VIAJES LOW COST</p>
-        <h1>DiverJet</h1>
-        <p>Escapadas con vuelos y hoteles al mejor precio.</p>
-      </div>
+    <div class="menu">
+      <div class="logo">DiverJet</div>
       <nav>
-        <a href="#destinos">Destinos</a>
+        <a href="#inicio">Inicio</a>
         <a href="#ofertas">Ofertas</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#consejos">Consejos</a>
       </nav>
+      <a class="cuenta" href="#contacto">Mi Cuenta</a>
     </div>
 
-    <main>
-      <section class="presentacion">
-        <div class="texto-presentacion">
-          <h2>Tu viaje soñado, sin gastar de más</h2>
-          <p>
-            Reserva packs completos con precio final claro, pago fácil y destinos top de Europa.
-          </p>
-          <a class="boton" href="#destinos">Ver catálogo</a>
+    <main id="inicio">
+      <section class="portada">
+        <div class="fondo-portada"></div>
+        <div class="contenido-portada">
+          <h1>Viaja barato por Europa</h1>
+          <p>Ofertas reales de vuelos diarios para estudiantes.</p>
+          <form class="buscador">
+            <input type="text" placeholder="Origen (ej. Madrid)" />
+            <input type="text" placeholder="Destino (ej. Londres)" />
+            <input type="text" placeholder="Fecha deseada" />
+            <button type="button">Buscar Vuelos</button>
+          </form>
         </div>
-        <div class="datos">
-          <article>
-            <p class="numero">+15.000</p>
-            <p>viajeros al mes</p>
+      </section>
+
+      <section id="ofertas" class="seccion">
+        <h2>Chollos del momento</h2>
+        <p class="subtitulo">Nuestra selección editorial con las mejores escapadas.</p>
+
+        <div class="rejilla">
+          <article class="tarjeta">
+            <img src="fotos/roma.svg" alt="Vista ilustrada de Roma" />
+            <span class="precio">99€</span>
+            <h3>Roma Imprescindible</h3>
+            <p>Vuelo directo desde Madrid + 3 noches en hotel céntrico.</p>
+            <a href="#">Ver detalles</a>
           </article>
-          <article>
-            <p class="numero">Hasta -45%</p>
-            <p>en escapadas flash</p>
+
+          <article class="tarjeta">
+            <img src="fotos/lisboa.svg" alt="Vista ilustrada de Lisboa" />
+            <span class="precio">75€</span>
+            <h3>Escapada a Lisboa</h3>
+            <p>Vuelo + alojamiento en zona céntrica. Ideal para fin de semana.</p>
+            <a href="#">¡Reservar ya!</a>
+          </article>
+
+          <article class="tarjeta">
+            <img src="fotos/paris.svg" alt="Vista ilustrada de París" />
+            <span class="precio">120€</span>
+            <h3>París Low Cost</h3>
+            <p>Vuelo ida y vuelta + 2 noches cerca de Montmartre.</p>
+            <a href="#">Ver detalles</a>
+          </article>
+
+          <article class="tarjeta">
+            <img src="fotos/budapest.svg" alt="Vista ilustrada de Budapest" />
+            <span class="precio">89€</span>
+            <h3>Budapest Mágico</h3>
+            <p>3 días de hotel y vuelo en una ciudad llena de historia.</p>
+            <a href="#">Ver detalles</a>
+          </article>
+
+          <article class="tarjeta">
+            <img src="fotos/praga.svg" alt="Vista ilustrada de Praga" />
+            <span class="precio">115€</span>
+            <h3>Praga de Cuento</h3>
+            <p>Viaje organizado con alojamiento privado cerca del centro.</p>
+            <a href="#">Ver detalles</a>
+          </article>
+
+          <article class="tarjeta">
+            <img src="fotos/berlin.svg" alt="Vista ilustrada de Berlín" />
+            <span class="precio">65€</span>
+            <h3>Berlín Express</h3>
+            <p>Promoción para escapada rápida de 2 días a precio mínimo.</p>
+            <a href="#">Ver detalles</a>
           </article>
         </div>
       </section>
 
-      <section id="destinos">
-        <div class="titulo-seccion">
-          <h2>Catálogo de destinos</h2>
-          <p>Elige tu próxima escapada rápida.</p>
-        </div>
+      <section id="consejos" class="seccion">
+        <h2>Consejos de experto</h2>
+        <p class="subtitulo">Haz que tu presupuesto te rinda mucho más.</p>
 
-        <div class="destinos">
-          <article class="tarjeta">
-            <span class="chip">Top ventas</span>
-            <h3>Lisboa Express</h3>
-            <p>3 días · Vuelo + hotel</p>
-            <p class="precio">Desde 129€</p>
+        <div class="rejilla consejos">
+          <article class="tip">
+            <h3>Viajar entre semana</h3>
+            <p>Los martes y miércoles suelen tener mejores precios que el fin de semana.</p>
           </article>
-
-          <article class="tarjeta">
-            <span class="chip">Oferta</span>
-            <h3>Roma Mini Break</h3>
-            <p>4 días · Vuelo + hotel</p>
-            <p class="precio">Desde 189€</p>
+          <article class="tip">
+            <h3>Solo mochila</h3>
+            <p>Lleva solo lo necesario para ahorrar en tasas de equipaje facturado.</p>
           </article>
-
-          <article class="tarjeta">
-            <span class="chip">Muy pedido</span>
-            <h3>Budapest Termal</h3>
-            <p>4 días · Vuelo + hotel</p>
-            <p class="precio">Desde 169€</p>
+          <article class="tip">
+            <h3>Aeropuertos secundarios</h3>
+            <p>Muchas veces tienen vuelos más baratos y menos saturación.</p>
           </article>
-
-          <article class="tarjeta">
-            <span class="chip">Nuevo</span>
-            <h3>Marrakech Color</h3>
-            <p>5 días · Vuelo + riad</p>
-            <p class="precio">Desde 209€</p>
+          <article class="tip">
+            <h3>Regla de 3 meses</h3>
+            <p>Para Europa, reservar con 90 días de antelación suele funcionar bien.</p>
           </article>
-
-          <article class="tarjeta">
-            <span class="chip">Escapada</span>
-            <h3>Praga Nocturna</h3>
-            <p>3 días · Vuelo + hotel</p>
-            <p class="precio">Desde 149€</p>
+          <article class="tip">
+            <h3>Snacks de casa</h3>
+            <p>Evita comprar todo en aeropuerto y gana margen para el viaje.</p>
           </article>
-
-          <article class="tarjeta">
-            <span class="chip">Más barato</span>
-            <h3>Oporto Relax</h3>
-            <p>3 días · Vuelo + hotel</p>
-            <p class="precio">Desde 119€</p>
+          <article class="tip">
+            <h3>Tarjetas sin comisiones</h3>
+            <p>Te ahorran bastante dinero cuando pagas en moneda extranjera.</p>
           </article>
         </div>
-      </section>
-
-      <section id="ofertas" class="bloque-ofertas">
-        <h2>Ofertas rápidas de esta semana</h2>
-        <ul>
-          <li>2x1 en equipaje de mano para Lisboa y Oporto.</li>
-          <li>10% extra reservando 2 destinos en el mismo mes.</li>
-          <li>Seguro básico incluido en viajes de 4 noches o más.</li>
-        </ul>
-      </section>
-
-      <section id="contacto" class="bloque-contacto">
-        <h2>Contacto</h2>
-        <p>¿Te ayudamos a elegir? Escríbenos y te pasamos opciones personalizadas.</p>
-        <a class="correo" href="mailto:info@diverjet.com">info@diverjet.com</a>
       </section>
     </main>
 
-    <div class="pie">
-      <p>© 2026 DiverJet · Viajes low cost</p>
+    <div id="contacto" class="pie">
+      <div>
+        <h3>DiverJet</h3>
+        <p>© 2026 DiverJet. Mobility for the next generation.</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>Email: hola@diverjet.com</p>
+        <p>Soporte: ayuda@diverjet.com</p>
+        <p>Tel: +34 900 123 456</p>
+      </div>
+      <div class="links-pie">
+        <a href="#">Contacto</a>
+        <a href="#">Aviso legal</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Cookies</a>
+      </div>
     </div>
   </body>
 </html>
