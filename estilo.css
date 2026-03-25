@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #fafaf8;
-  color: #111;
+  background: white;
+  color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10,12 +10,12 @@ body {
 }
 
 body.auth {
-  background: #f0efea;
+  background: whitesmoke;
 }
 
 nav {
-  background: #fafaf8;
-  border-bottom: 1px solid #e2e1da;
+  background: white;
+  border-bottom: 1px solid lightgray;
   padding: 0 24px;
   height: 56px;
   display: flex;
@@ -28,12 +28,12 @@ nav {
   font-family: Georgia, serif;
   font-style: italic;
   font-size: 20px;
-  color: #111;
+  color: black;
   text-decoration: none;
 }
 
 .logo b {
-  color: #ff4d1c;
+  color: orangered;
   font-style: normal;
 }
 
@@ -44,20 +44,20 @@ nav {
 
 .nav-centro a {
   font-size: 13px;
-  color: #666;
+  color: dimgray;
   text-decoration: none;
   padding: 6px 10px;
 }
 
 .nav-centro a.activo {
-  color: #111;
+  color: black;
   font-weight: bold;
 }
 
 .nav-btn {
   font-size: 12px;
-  border: 1px solid #111;
-  color: #111;
+  border: 1px solid black;
+  color: black;
   text-decoration: none;
   padding: 6px 12px;
 }
@@ -71,7 +71,7 @@ main {
 }
 
 .cab {
-  border-bottom: 1px solid #e2e1da;
+  border-bottom: 1px solid lightgray;
   padding-bottom: 14px;
   margin-bottom: 20px;
   display: flex;
@@ -90,27 +90,27 @@ main {
 .cab p {
   margin: 0;
   font-size: 13px;
-  color: #666;
+  color: dimgray;
 }
 
 .buscador {
   display: flex;
-  border: 1px solid #111;
+  border: 1px solid black;
   margin-bottom: 24px;
 }
 
 .buscador input {
   flex: 1;
   border: none;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid lightgray;
   padding: 11px 12px;
   font-size: 14px;
 }
 
 .buscador button {
   border: none;
-  background: #111;
-  color: #fff;
+  background: black;
+  color: white;
   padding: 0 16px;
   font-size: 12px;
   font-weight: bold;
@@ -127,16 +127,16 @@ main {
 }
 
 .card {
-  border: 1px solid #e2e1da;
-  background: #fff;
+  border: 1px solid lightgray;
+  background: white;
   display: flex;
   flex-direction: column;
 }
 
 .card-inv {
-  background: #111;
-  color: #fff;
-  border-color: #111;
+  background: black;
+  color: white;
+  border-color: black;
 }
 
 .card-head {
@@ -157,7 +157,7 @@ main {
 
 .airport {
   font-size: 11px;
-  color: #999;
+  color: gray;
   text-transform: uppercase;
   margin-top: 4px;
 }
@@ -165,23 +165,23 @@ main {
 .card-precio {
   font-family: Georgia, serif;
   font-size: 28px;
-  color: #ff4d1c;
+  color: orangered;
   font-weight: bold;
 }
 
 .card-body {
   padding: 10px 18px;
-  color: #666;
+  color: dimgray;
   font-size: 13px;
   flex: 1;
 }
 
 .card-inv .card-body {
-  color: #bbb;
+  color: gray;
 }
 
 .card-pie {
-  border-top: 1px solid #e2e1da;
+  border-top: 1px solid lightgray;
   padding: 12px 18px;
   display: flex;
   justify-content: space-between;
@@ -191,7 +191,7 @@ main {
 
 .card-meta {
   font-size: 11px;
-  color: #999;
+  color: gray;
   text-transform: uppercase;
 }
 
@@ -202,10 +202,10 @@ main {
   text-transform: uppercase;
 }
 
-.tag-acento { background: #ff4d1c; color: white; }
-.tag-negro { background: #111; color: white; }
-.tag-amarillo { background: #f59e0b; color: white; }
-.tag-verde { background: #1a7a2e; color: white; }
+.tag-acento { background: orangered; color: white; }
+.tag-negro { background: black; color: white; }
+.tag-amarillo { background: orange; color: white; }
+.tag-verde { background: green; color: white; }
 
 .btn {
   text-decoration: none;
@@ -214,22 +214,22 @@ main {
   font-weight: bold;
 }
 
-.btn-negro { background: #111; color: white; }
-.btn-gris { background: #f0efea; color: #111; border: 1px solid #ddd; }
+.btn-negro { background: black; color: white; }
+.btn-gris { background: whitesmoke; color: black; border: 1px solid lightgray; }
 .btn-w { display: block; width: 100%; text-align: center; }
 
 .inicio .cab-ofertas { margin-top: 8px; }
-.inicio-link, .perfil-link { color: #666; text-decoration: none; font-size: 13px; }
-.inicio-consejo, .consejos-item { border-top: 2px solid #111; padding-top: 12px; }
-.inicio-consejo-num, .consejos-item-num { font-size: 11px; color: #999; margin-bottom: 8px; }
+.inicio-link, .perfil-link { color: dimgray; text-decoration: none; font-size: 13px; }
+.inicio-consejo, .consejos-item { border-top: 2px solid black; padding-top: 12px; }
+.inicio-consejo-num, .consejos-item-num { font-size: 11px; color: gray; margin-bottom: 8px; }
 .inicio-consejo-titulo, .consejos-item-titulo { font-family: Georgia, serif; font-size: 18px; font-weight: bold; margin-bottom: 8px; }
-.inicio-consejo-texto, .consejos-item-texto { font-size: 13px; color: #666; }
+.inicio-consejo-texto, .consejos-item-texto { font-size: 13px; color: dimgray; }
 .inicio .inicio-consejo-titulo { font-size: 17px; }
 
-.boletin-texto { font-size: 13px; color: #aaa; }
+.boletin-texto { font-size: 13px; color: gray; }
 
 .tira-negra {
-  background: #111;
+  background: black;
   color: white;
   padding: 20px 24px;
   display: flex;
@@ -240,7 +240,7 @@ main {
 
 .tira-form {
   display: flex;
-  border: 1px solid #444;
+  border: 1px solid gray;
 }
 
 .tira-form input {
@@ -253,7 +253,7 @@ main {
 
 .tira-form button {
   border: none;
-  background: #ff4d1c;
+  background: orangered;
   color: white;
   font-size: 12px;
   font-weight: bold;
@@ -273,7 +273,7 @@ main {
 
 .form-grupo input {
   width: 100%;
-  border: 1px solid #ddd;
+  border: 1px solid lightgray;
   padding: 10px 12px;
 }
 
@@ -290,7 +290,7 @@ main {
 .login-box,
 .reg-box {
   background: white;
-  border: 1px solid #ddd;
+  border: 1px solid lightgray;
   padding: 36px 30px;
 }
 
@@ -312,7 +312,7 @@ main {
 .reg-pie,
 .login-pie {
   font-size: 13px;
-  color: #666;
+  color: dimgray;
 }
 
 .login-sub { margin-bottom: 28px; }
@@ -321,16 +321,16 @@ main {
 .reg-pie { margin-top: 20px; }
 
 .reg-pie a,
-.login-pie a { color: #111; font-weight: bold; text-decoration: none; }
+.login-pie a { color: black; font-weight: bold; text-decoration: none; }
 
-.divider { height: 1px; background: #ddd; margin: 24px 0; }
-.forgot { display: block; text-align: right; font-size: 12px; color: #666; text-decoration: none; margin: -8px 0 20px; }
+.divider { height: 1px; background: lightgray; margin: 24px 0; }
+.forgot { display: block; text-align: right; font-size: 12px; color: dimgray; text-decoration: none; margin: -8px 0 20px; }
 
 .login-box .btn { padding: 13px; }
 .reg-box .btn { padding: 13px; margin-top: 4px; }
 
 .reg-pitch {
-  background: #111;
+  background: black;
   color: white;
   width: 320px;
   padding: 36px 30px;
@@ -341,20 +341,20 @@ main {
 }
 
 .reg-pitch h2 { margin: 0; font-family: Georgia, serif; font-size: 26px; }
-.reg-pitch h2 em { color: #ff4d1c; }
+.reg-pitch h2 em { color: orangered; }
 
 .pitch-list { margin: 0; padding: 0; list-style: none; }
-.pitch-list li { font-size: 13px; color: #bbb; margin-bottom: 10px; }
-.pitch-list li::before { content: "→ "; color: #ff4d1c; }
+.pitch-list li { font-size: 13px; color: gray; margin-bottom: 10px; }
+.pitch-list li::before { content: "→ "; color: orangered; }
 
 .filtros { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
-.filtro-label { font-size: 11px; font-weight: bold; color: #666; }
-.filtro-btn { font-size: 12px; border: 1px solid #ddd; background: white; padding: 5px 12px; }
-.filtro-btn.on { background: #111; color: white; border-color: #111; }
-.contador { font-size: 12px; color: #666; margin-bottom: 14px; }
+.filtro-label { font-size: 11px; font-weight: bold; color: dimgray; }
+.filtro-btn { font-size: 12px; border: 1px solid lightgray; background: white; padding: 5px 12px; }
+.filtro-btn.on { background: black; color: white; border-color: black; }
+.contador { font-size: 12px; color: dimgray; margin-bottom: 14px; }
 
 .consejos-resumen {
-  background: #111;
+  background: black;
   color: white;
   padding: 20px 24px;
   margin-bottom: 24px;
@@ -363,12 +363,12 @@ main {
   align-items: center;
 }
 
-.consejos-resumen-num { font-family: Georgia, serif; font-size: 52px; color: #ff4d1c; font-weight: bold; }
+.consejos-resumen-num { font-family: Georgia, serif; font-size: 52px; color: orangered; font-weight: bold; }
 .consejos-resumen-titulo { font-family: Georgia, serif; font-size: 18px; font-weight: bold; margin-bottom: 4px; }
 
 .perfil-bloque-titulo {
   font-size: 11px;
-  color: #666;
+  color: dimgray;
   font-weight: bold;
   text-transform: uppercase;
   display: flex;
@@ -378,10 +378,10 @@ main {
 }
 
 .perfil-bloque-titulo.con-margen { margin-top: 28px; }
-.perfil-bloque-linea { flex: 1; height: 1px; background: #ddd; }
+.perfil-bloque-linea { flex: 1; height: 1px; background: lightgray; }
 
 .viaje-row {
-  border: 1px solid #ddd;
+  border: 1px solid lightgray;
   padding: 18px;
   margin-bottom: 8px;
   display: flex;
@@ -391,10 +391,10 @@ main {
   flex-wrap: wrap;
 }
 
-.viaje-row.alerta { border-color: #f59e0b; }
+.viaje-row.alerta { border-color: orange; }
 .viaje-info { display: flex; gap: 14px; align-items: center; }
 .viaje-iata {
-  background: #111;
+  background: black;
   color: white;
   width: 60px;
   height: 60px;
@@ -406,37 +406,13 @@ main {
   font-size: 14px;
 }
 
-.viaje-iata small { font-size: 9px; color: #bbb; }
+.viaje-iata small { font-size: 9px; color: gray; }
 .viaje-titulo { font-family: Georgia, serif; font-size: 18px; margin-bottom: 4px; display: flex; gap: 8px; }
-.viaje-detalle { font-size: 13px; color: #666; }
-.viaje-link { display: inline-block; margin-top: 6px; font-size: 12px; color: #111; text-decoration: none; border-bottom: 1px solid #111; }
+.viaje-detalle { font-size: 13px; color: dimgray; }
+.viaje-link { display: inline-block; margin-top: 6px; font-size: 12px; color: black; text-decoration: none; border-bottom: 1px solid black; }
 .viaje-precio { font-family: Georgia, serif; font-size: 28px; margin-bottom: 8px; }
-.viaje-precio-pagado { color: #666; }
-.timer { font-size: 11px; color: #f59e0b; font-weight: bold; margin-top: 4px; }
-
-.pie {
-  border-top: 1px solid #ddd;
-  padding: 16px 24px;
-  display: flex;
-  justify-content: space-between;
-  gap: 14px;
-  flex-wrap: wrap;
-  font-size: 12px;
-  color: #666;
-}
-
-.pie-logo {
-  font-family: Georgia, serif;
-  font-style: italic;
-  color: #111;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.pie-logo b { color: #ff4d1c; font-style: normal; }
-.pie-links { list-style: none; margin: 0; padding: 0; display: flex; gap: 16px; }
-.pie-links a { text-decoration: none; color: #666; font-size: 11px; }
+.viaje-precio-pagado { color: dimgray; }
+.timer { font-size: 11px; color: orange; font-weight: bold; margin-top: 4px; }
 
 @media (max-width: 900px) {
   .grid { grid-template-columns: repeat(2, 1fr); }
@@ -446,7 +422,7 @@ main {
   .reg-wrap { flex-direction: column; }
   .reg-pitch,
   .reg-box { width: 100%; }
-  .reg-box { border-left: 1px solid #ddd; border-top: none; }
+  .reg-box { border-left: 1px solid lightgray; border-top: none; }
 }
 
 @media (max-width: 600px) {
@@ -454,7 +430,7 @@ main {
   .nav-centro { display: none; }
   main { padding: 20px 14px 28px; }
   .buscador { flex-direction: column; }
-  .buscador input { border-right: none; border-bottom: 1px solid #ddd; }
+  .buscador input { border-right: none; border-bottom: 1px solid lightgray; }
   .grid { grid-template-columns: 1fr; }
   .cab { flex-direction: column; align-items: flex-start; }
   .tira-negra { flex-direction: column; }
