@@ -5,42 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ofertas — DiverJet</title>
   <link rel="stylesheet" href="estilo.css">
-  <style>
-    .filtros {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 20px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    .filtro-label {
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      color: var(--gris-texto);
-      margin-right: 4px;
-    }
-    .filtro-btn {
-      font-size: 12px;
-      padding: 5px 12px;
-      border: 1px solid var(--gris-borde);
-      background: var(--blanco);
-      color: var(--negro);
-      cursor: pointer;
-      font-family: var(--font-cuerpo);
-      transition: all 0.15s;
-    }
-    .filtro-btn:hover { border-color: var(--negro); }
-    .filtro-btn.on { background: var(--negro); color: var(--blanco); border-color: var(--negro); }
-
-    .contador {
-      font-size: 12px;
-      color: var(--gris-texto);
-      margin-bottom: 16px;
-    }
-    .contador b { color: var(--negro); }
-  </style>
 </head>
 <body>
 
@@ -79,15 +43,15 @@
 
   <div class="contador">Mostrando <b>9 ofertas</b> disponibles ahora mismo</div>
 
-  <div class="grid" style="margin-bottom: 32px;">
+  <div class="grid grid-ofertas">
 
     <!-- Destacada grande -->
     <div class="card card-inv">
       <div class="card-head">
         <div>
-          <div style="margin-bottom:8px;"><span class="tag tag-acento">🔥 Top ventas</span></div>
+          <div class="card-etiqueta"><span class="tag tag-acento">🔥 Top ventas</span></div>
           <div class="card-ciudad">Lisboa</div>
-          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-top:4px;">LIS · Portugal</div>
+          <div class="airport">LIS · Portugal</div>
         </div>
         <div class="card-precio">75€</div>
       </div>
@@ -101,9 +65,9 @@
     <div class="card">
       <div class="card-head">
         <div>
-          <div style="margin-bottom:8px;"><span class="tag tag-negro">Recomendado</span></div>
+          <div class="card-etiqueta"><span class="tag tag-negro">Recomendado</span></div>
           <div class="card-ciudad">Roma</div>
-          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#aaa;margin-top:4px;">FCO · Italia</div>
+          <div class="airport">FCO · Italia</div>
         </div>
         <div class="card-precio">99€</div>
       </div>
@@ -118,7 +82,7 @@
       <div class="card-head">
         <div>
           <div class="card-ciudad">Berlín</div>
-          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#aaa;margin-top:4px;">BER · Alemania</div>
+          <div class="airport">BER · Alemania</div>
         </div>
         <div class="card-precio">65€</div>
       </div>
@@ -133,7 +97,7 @@
       <div class="card-head">
         <div>
           <div class="card-ciudad">Budapest</div>
-          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#aaa;margin-top:4px;">BUD · Hungría</div>
+          <div class="airport">BUD · Hungría</div>
         </div>
         <div class="card-precio">89€</div>
       </div>
@@ -148,7 +112,7 @@
       <div class="card-head">
         <div>
           <div class="card-ciudad">Praga</div>
-          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#aaa;margin-top:4px;">PRG · Chequia</div>
+          <div class="airport">PRG · Chequia</div>
         </div>
         <div class="card-precio">115€</div>
       </div>
@@ -163,7 +127,7 @@
       <div class="card-head">
         <div>
           <div class="card-ciudad">París</div>
-          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#aaa;margin-top:4px;">CDG · Francia</div>
+          <div class="airport">CDG · Francia</div>
         </div>
         <div class="card-precio">120€</div>
       </div>
@@ -178,7 +142,7 @@
       <div class="card-head">
         <div>
           <div class="card-ciudad">Ámsterdam</div>
-          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#aaa;margin-top:4px;">AMS · Países Bajos</div>
+          <div class="airport">AMS · Países Bajos</div>
         </div>
         <div class="card-precio">108€</div>
       </div>
@@ -193,7 +157,7 @@
       <div class="card-head">
         <div>
           <div class="card-ciudad">Dublín</div>
-          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#aaa;margin-top:4px;">DUB · Irlanda</div>
+          <div class="airport">DUB · Irlanda</div>
         </div>
         <div class="card-precio">72€</div>
       </div>
@@ -207,9 +171,9 @@
     <div class="card">
       <div class="card-head">
         <div>
-          <div style="margin-bottom:8px;"><span class="tag tag-amarillo">Últimas plazas</span></div>
+          <div class="card-etiqueta"><span class="tag tag-amarillo">Últimas plazas</span></div>
           <div class="card-ciudad">Viena</div>
-          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#aaa;margin-top:4px;">VIE · Austria</div>
+          <div class="airport">VIE · Austria</div>
         </div>
         <div class="card-precio">134€</div>
       </div>
@@ -224,7 +188,7 @@
 </main>
 
 <div class="tira-negra">
-  <p><b>Alerta de precios personalizada.</b><br><span style="font-size:13px;color:#aaa;">Te avisamos cuando baje el precio de tu destino.</span></p>
+  <p><b>Alerta de precios personalizada.</b><br><span class="boletin-texto">Te avisamos cuando baje el precio de tu destino.</span></p>
   <div class="tira-form">
     <input type="email" placeholder="tu@correo.com">
     <button>Activar alerta</button>

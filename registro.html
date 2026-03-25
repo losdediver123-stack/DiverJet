@@ -5,59 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Registro — DiverJet</title>
   <link rel="stylesheet" href="estilo.css">
-  <style>
-    body { background: var(--gris); }
-    .reg-wrap {
-      flex: 1;
-      display: flex;
-      align-items: stretch;
-      justify-content: center;
-      padding: 40px 16px;
-      gap: 0;
-    }
-    .reg-pitch {
-      background: var(--negro);
-      color: var(--blanco);
-      padding: 40px 36px;
-      width: 320px;
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 20px;
-    }
-    .reg-pitch h2 {
-      font-family: var(--font-titulo);
-      font-size: 26px;
-      font-weight: bold;
-      line-height: 1.2;
-    }
-    .reg-pitch h2 em { color: var(--acento); font-style: italic; }
-    .pitch-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
-    .pitch-list li { font-size: 13px; color: #aaa; display: flex; gap: 10px; line-height: 1.4; }
-    .pitch-list li::before { content: '→'; color: var(--acento); flex-shrink: 0; }
-    .reg-box {
-      background: var(--blanco);
-      border: 1px solid var(--gris-borde);
-      border-left: none;
-      padding: 40px 36px;
-      width: 380px;
-      flex-shrink: 0;
-    }
-    .reg-titulo { font-family: var(--font-titulo); font-size: 24px; font-weight: bold; margin-bottom: 4px; }
-    .reg-sub { font-size: 13px; color: var(--gris-texto); margin-bottom: 24px; }
-    .reg-pie { font-size: 13px; color: var(--gris-texto); text-align: center; margin-top: 20px; }
-    .reg-pie a { color: var(--negro); font-weight: 700; text-decoration: none; }
-    .reg-pie a:hover { text-decoration: underline; }
-
-    @media (max-width: 720px) {
-      .reg-wrap { flex-direction: column; padding: 20px 16px; }
-      .reg-pitch { width: 100%; }
-      .reg-box { width: 100%; border-left: 1px solid var(--gris-borde); border-top: none; }
-    }
-  </style>
 </head>
-<body>
+<body class="auth">
 
 <nav>
   <a href="index.html" class="logo">Diver<b>Jet</b></a>
@@ -97,7 +46,7 @@
         <label>Contraseña</label>
         <input type="password" placeholder="Mínimo 8 caracteres" required>
       </div>
-      <button type="submit" class="btn btn-negro btn-w" style="padding: 13px; margin-top: 4px;">Crear cuenta gratis →</button>
+      <button type="submit" class="btn btn-negro btn-w">Crear cuenta gratis →</button>
     </form>
 
     <div class="reg-pie">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></div>
