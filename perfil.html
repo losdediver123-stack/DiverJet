@@ -5,58 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mi área — DiverJet</title>
   <link rel="stylesheet" href="estilo.css">
-  <style>
-    .viaje-row {
-      border: 1px solid var(--gris-borde);
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-      margin-bottom: 8px;
-      transition: border-color 0.15s;
-    }
-    .viaje-row:hover { border-color: var(--negro); }
-    .viaje-row.alerta { border-color: #f59e0b; border-width: 1.5px; }
-
-    .viaje-iata {
-      width: 60px;
-      height: 60px;
-      background: var(--negro);
-      color: var(--blanco);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      flex-shrink: 0;
-    }
-    .viaje-iata small { font-size: 9px; font-weight: 400; letter-spacing: 0; color: #aaa; margin-top: 2px; }
-
-    .viaje-info { display: flex; gap: 16px; align-items: center; flex: 1; min-width: 0; }
-
-    .viaje-titulo {
-      font-family: var(--font-titulo);
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 4px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-    .viaje-detalle { font-size: 13px; color: var(--gris-texto); }
-    .viaje-link { font-size: 12px; font-weight: 700; color: var(--negro); text-decoration: none; border-bottom: 1px solid var(--negro); margin-top: 6px; display: inline-block; }
-    .viaje-link:hover { color: var(--acento); border-color: var(--acento); }
-
-    .viaje-accion { text-align: right; flex-shrink: 0; }
-    .viaje-precio { font-family: var(--font-titulo); font-size: 28px; font-weight: bold; color: var(--negro); margin-bottom: 8px; }
-    .viaje-precio-pagado { color: var(--gris-texto); }
-    .timer { font-size: 11px; color: #f59e0b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
-  </style>
 </head>
 <body>
 
@@ -73,13 +21,13 @@
 <main>
   <div class="cab">
     <h1>Hola, Viajero.</h1>
-    <a href="index.html" style="font-size:13px;color:var(--gris-texto);text-decoration:none;">Cerrar sesión</a>
+    <a href="index.html" class="link-muted">Cerrar sesión</a>
   </div>
 
   <!-- PENDIENTE DE PAGO -->
-  <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--gris-texto);margin-bottom:12px;display:flex;align-items:center;gap:10px;">
+  <div class="subhead">
     Pendiente de pago
-    <span style="flex:1;height:1px;background:var(--gris-borde);display:block;"></span>
+    <span class="line"></span>
   </div>
 
   <div class="viaje-row alerta">
@@ -101,9 +49,9 @@
   </div>
 
   <!-- VIAJES CONFIRMADOS -->
-  <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--gris-texto);margin-bottom:12px;margin-top:28px;display:flex;align-items:center;gap:10px;">
+  <div class="subhead mt">
     Viajes confirmados
-    <span style="flex:1;height:1px;background:var(--gris-borde);display:block;"></span>
+    <span class="line"></span>
   </div>
 
   <div class="viaje-row">
