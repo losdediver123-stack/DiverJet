@@ -3,10 +3,6 @@ body {
   font-family: Arial, sans-serif;
   background: white;
   color: black;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.5;
 }
 
 body.auth {
@@ -14,106 +10,91 @@ body.auth {
 }
 
 nav {
-  background: white;
-  border-bottom: 1px solid lightgray;
-  padding: 0 24px;
   height: 56px;
+  padding: 0 20px;
+  border-bottom: 1px solid lightgray;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
 }
 
 .logo {
   font-family: Georgia, serif;
-  font-style: italic;
   font-size: 20px;
-  color: black;
+  font-style: italic;
   text-decoration: none;
+  color: black;
 }
 
-.logo b {
-  color: orangered;
-  font-style: normal;
-}
+.logo b { color: orangered; font-style: normal; }
 
-.nav-centro {
-  display: flex;
-  gap: 8px;
-}
+.nav-centro { display: flex; gap: 8px; }
 
 .nav-centro a {
-  font-size: 13px;
-  color: dimgray;
   text-decoration: none;
+  color: dimgray;
+  font-size: 13px;
   padding: 6px 10px;
 }
 
-.nav-centro a.activo {
-  color: black;
-  font-weight: bold;
-}
+.nav-centro .activo { color: black; font-weight: bold; }
 
 .nav-btn {
-  font-size: 12px;
   border: 1px solid black;
-  color: black;
+  padding: 6px 10px;
   text-decoration: none;
-  padding: 6px 12px;
+  color: black;
+  font-size: 12px;
 }
 
 main {
-  width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 28px 20px 40px;
-  flex: 1;
+  padding: 24px 16px 36px;
 }
 
 .cab {
   border-bottom: 1px solid lightgray;
-  padding-bottom: 14px;
   margin-bottom: 20px;
+  padding-bottom: 12px;
   display: flex;
   justify-content: space-between;
-  gap: 12px;
   align-items: baseline;
+  gap: 10px;
 }
+
+.cab2 { margin-top: 8px; }
 
 .cab h1,
 .cab h2 {
   margin: 0;
   font-family: Georgia, serif;
-  font-size: 28px;
 }
 
-.cab p {
-  margin: 0;
-  font-size: 13px;
-  color: dimgray;
-}
+.cab p { margin: 0; font-size: 13px; color: dimgray; }
+
+.link { color: dimgray; text-decoration: none; font-size: 13px; }
 
 .buscador {
-  display: flex;
   border: 1px solid black;
-  margin-bottom: 24px;
+  display: flex;
+  margin-bottom: 22px;
 }
 
 .buscador input {
   flex: 1;
   border: none;
   border-right: 1px solid lightgray;
-  padding: 11px 12px;
-  font-size: 14px;
+  padding: 10px;
 }
 
 .buscador button {
   border: none;
   background: black;
   color: white;
-  padding: 0 16px;
   font-size: 12px;
   font-weight: bold;
+  padding: 0 14px;
 }
 
 .grid {
@@ -122,9 +103,7 @@ main {
   gap: 14px;
 }
 
-.grid-ofertas {
-  margin-bottom: 30px;
-}
+.of-grid { margin-bottom: 28px; }
 
 .card {
   border: 1px solid lightgray;
@@ -133,108 +112,83 @@ main {
   flex-direction: column;
 }
 
-.card-inv {
-  background: black;
-  color: white;
-  border-color: black;
-}
+.card-inv { background: black; color: white; }
 
 .card-head {
-  padding: 18px 18px 0;
+  padding: 16px 16px 0;
   display: flex;
   justify-content: space-between;
 }
 
-.card-etiqueta {
-  margin-bottom: 8px;
-}
+.etq { margin-bottom: 8px; }
 
-.card-ciudad {
-  font-family: Georgia, serif;
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.airport {
-  font-size: 11px;
-  color: gray;
-  text-transform: uppercase;
-  margin-top: 4px;
-}
-
-.card-precio {
-  font-family: Georgia, serif;
-  font-size: 28px;
-  color: orangered;
-  font-weight: bold;
-}
+.card-ciudad { font-family: Georgia, serif; font-size: 22px; font-weight: bold; }
+.airport { font-size: 11px; color: gray; margin-top: 4px; }
+.card-precio { font-family: Georgia, serif; font-size: 28px; color: orangered; font-weight: bold; }
 
 .card-body {
-  padding: 10px 18px;
-  color: dimgray;
+  padding: 10px 16px;
   font-size: 13px;
+  color: dimgray;
   flex: 1;
 }
 
-.card-inv .card-body {
-  color: gray;
-}
+.card-inv .card-body { color: gray; }
 
 .card-pie {
   border-top: 1px solid lightgray;
-  padding: 12px 18px;
+  padding: 12px 16px;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
   align-items: center;
+  gap: 10px;
 }
 
-.card-meta {
-  font-size: 11px;
-  color: gray;
-  text-transform: uppercase;
-}
+.card-meta { font-size: 11px; color: gray; }
 
-.tag {
-  font-size: 10px;
-  padding: 3px 8px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
+.tag { font-size: 10px; font-weight: bold; padding: 3px 8px; }
 .tag-acento { background: orangered; color: white; }
 .tag-negro { background: black; color: white; }
 .tag-amarillo { background: orange; color: white; }
 .tag-verde { background: green; color: white; }
 
-.btn {
-  text-decoration: none;
-  font-size: 12px;
-  padding: 8px 14px;
-  font-weight: bold;
-}
-
+.btn { text-decoration: none; font-size: 12px; font-weight: bold; padding: 8px 12px; }
 .btn-negro { background: black; color: white; }
 .btn-gris { background: whitesmoke; color: black; border: 1px solid lightgray; }
 .btn-w { display: block; width: 100%; text-align: center; }
 
-.inicio .cab-ofertas { margin-top: 8px; }
-.inicio-link, .perfil-link { color: dimgray; text-decoration: none; font-size: 13px; }
-.inicio-consejo, .consejos-item { border-top: 2px solid black; padding-top: 12px; }
-.inicio-consejo-num, .consejos-item-num { font-size: 11px; color: gray; margin-bottom: 8px; }
-.inicio-consejo-titulo, .consejos-item-titulo { font-family: Georgia, serif; font-size: 18px; font-weight: bold; margin-bottom: 8px; }
-.inicio-consejo-texto, .consejos-item-texto { font-size: 13px; color: dimgray; }
-.inicio .inicio-consejo-titulo { font-size: 17px; }
+.tip {
+  border-top: 2px solid black;
+  padding-top: 12px;
+}
 
-.boletin-texto { font-size: 13px; color: gray; }
+.tip-num { font-size: 11px; color: gray; margin-bottom: 8px; }
+.tip-titulo { font-family: Georgia, serif; font-size: 18px; font-weight: bold; margin-bottom: 8px; }
+.tip-texto { font-size: 13px; color: dimgray; }
+.inicio .tip-titulo { font-size: 17px; }
+
+.resumen {
+  background: black;
+  color: white;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.res-num { font-family: Georgia, serif; font-size: 52px; color: orangered; font-weight: bold; }
+.res-tit { font-family: Georgia, serif; font-size: 18px; font-weight: bold; margin-bottom: 4px; }
+
+.mini { font-size: 13px; color: gray; }
 
 .tira-negra {
   background: black;
   color: white;
-  padding: 20px 24px;
+  padding: 18px 20px;
   display: flex;
   justify-content: space-between;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
@@ -248,7 +202,6 @@ main {
   background: transparent;
   color: white;
   padding: 9px 12px;
-  width: 220px;
 }
 
 .tira-form button {
@@ -257,116 +210,63 @@ main {
   color: white;
   font-size: 12px;
   font-weight: bold;
-  padding: 9px 14px;
+  padding: 9px 12px;
 }
 
-.form-grupo {
-  margin-bottom: 14px;
-}
+.campo { margin-bottom: 14px; }
+.campo label { display: block; font-size: 11px; font-weight: bold; margin-bottom: 6px; }
+.campo input { width: 100%; border: 1px solid lightgray; padding: 10px 12px; }
 
-.form-grupo label {
-  display: block;
-  font-size: 11px;
-  margin-bottom: 6px;
-  font-weight: bold;
-}
-
-.form-grupo input {
-  width: 100%;
-  border: 1px solid lightgray;
-  padding: 10px 12px;
-}
-
-.login-wrap,
-.reg-wrap {
-  flex: 1;
+.auth-wrap,
+.reg-wrap2 {
   display: flex;
   justify-content: center;
-  padding: 40px 16px;
+  padding: 36px 16px;
 }
 
-.login-wrap { align-items: center; }
+.auth-wrap { align-items: center; }
 
-.login-box,
-.reg-box {
+.auth-box,
+.reg-box2 {
   background: white;
   border: 1px solid lightgray;
-  padding: 36px 30px;
+  padding: 32px 26px;
 }
 
-.login-box { width: 100%; max-width: 400px; }
-.reg-box { width: 380px; border-left: none; }
+.auth-box { width: 100%; max-width: 400px; }
+.reg-box2 { width: 380px; border-left: none; }
 
-.login-titulo,
-.reg-titulo {
-  font-family: Georgia, serif;
-  font-weight: bold;
-  margin-bottom: 4px;
-}
+.tit-form { font-family: Georgia, serif; font-size: 26px; font-weight: bold; margin-bottom: 4px; }
+.sub-form { font-size: 13px; color: dimgray; margin-bottom: 24px; }
+.pie-form { font-size: 13px; color: dimgray; text-align: center; }
+.pie-form a { color: black; font-weight: bold; text-decoration: none; }
 
-.login-titulo { font-size: 26px; }
-.reg-titulo { font-size: 24px; }
+.divider { height: 1px; background: lightgray; margin: 22px 0; }
+.forgot { display: block; text-align: right; font-size: 12px; color: dimgray; margin: -8px 0 18px; text-decoration: none; }
+.auth-box .btn { padding: 12px; }
+.reg-box2 .btn { padding: 12px; margin-top: 4px; }
 
-.login-sub,
-.reg-sub,
-.reg-pie,
-.login-pie {
-  font-size: 13px;
-  color: dimgray;
-}
-
-.login-sub { margin-bottom: 28px; }
-.reg-sub { margin-bottom: 24px; }
-.reg-pie, .login-pie { text-align: center; }
-.reg-pie { margin-top: 20px; }
-
-.reg-pie a,
-.login-pie a { color: black; font-weight: bold; text-decoration: none; }
-
-.divider { height: 1px; background: lightgray; margin: 24px 0; }
-.forgot { display: block; text-align: right; font-size: 12px; color: dimgray; text-decoration: none; margin: -8px 0 20px; }
-
-.login-box .btn { padding: 13px; }
-.reg-box .btn { padding: 13px; margin-top: 4px; }
-
-.reg-pitch {
+.reg-side {
+  width: 320px;
   background: black;
   color: white;
-  width: 320px;
-  padding: 36px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 16px;
+  padding: 32px 26px;
 }
 
-.reg-pitch h2 { margin: 0; font-family: Georgia, serif; font-size: 26px; }
-.reg-pitch h2 em { color: orangered; }
+.reg-side h2 { margin: 0 0 16px; font-family: Georgia, serif; font-size: 26px; }
+.reg-side h2 em { color: orangered; }
 
 .pitch-list { margin: 0; padding: 0; list-style: none; }
 .pitch-list li { font-size: 13px; color: gray; margin-bottom: 10px; }
 .pitch-list li::before { content: "→ "; color: orangered; }
 
-.filtros { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
-.filtro-label { font-size: 11px; font-weight: bold; color: dimgray; }
-.filtro-btn { font-size: 12px; border: 1px solid lightgray; background: white; padding: 5px 12px; }
+.filtros { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+.filtro-label { font-size: 11px; color: dimgray; font-weight: bold; }
+.filtro-btn { font-size: 12px; border: 1px solid lightgray; background: white; padding: 5px 10px; }
 .filtro-btn.on { background: black; color: white; border-color: black; }
 .contador { font-size: 12px; color: dimgray; margin-bottom: 14px; }
 
-.consejos-resumen {
-  background: black;
-  color: white;
-  padding: 20px 24px;
-  margin-bottom: 24px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.consejos-resumen-num { font-family: Georgia, serif; font-size: 52px; color: orangered; font-weight: bold; }
-.consejos-resumen-titulo { font-family: Georgia, serif; font-size: 18px; font-weight: bold; margin-bottom: 4px; }
-
-.perfil-bloque-titulo {
+.sub {
   font-size: 11px;
   color: dimgray;
   font-weight: bold;
@@ -377,62 +277,60 @@ main {
   margin-bottom: 12px;
 }
 
-.perfil-bloque-titulo.con-margen { margin-top: 28px; }
-.perfil-bloque-linea { flex: 1; height: 1px; background: lightgray; }
+.sub.mt { margin-top: 26px; }
+.linea { flex: 1; height: 1px; background: lightgray; }
 
-.viaje-row {
+.fila {
   border: 1px solid lightgray;
-  padding: 18px;
+  padding: 16px;
   margin-bottom: 8px;
   display: flex;
   justify-content: space-between;
-  gap: 12px;
   align-items: center;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
-.viaje-row.alerta { border-color: orange; }
-.viaje-info { display: flex; gap: 14px; align-items: center; }
-.viaje-iata {
-  background: black;
-  color: white;
+.alerta { border-color: orange; }
+.info { display: flex; gap: 14px; align-items: center; }
+.iata {
   width: 60px;
   height: 60px;
+  background: black;
+  color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  font-weight: bold;
+  justify-content: center;
+  flex-direction: column;
   font-size: 14px;
+  font-weight: bold;
 }
 
-.viaje-iata small { font-size: 9px; color: gray; }
-.viaje-titulo { font-family: Georgia, serif; font-size: 18px; margin-bottom: 4px; display: flex; gap: 8px; }
-.viaje-detalle { font-size: 13px; color: dimgray; }
-.viaje-link { display: inline-block; margin-top: 6px; font-size: 12px; color: black; text-decoration: none; border-bottom: 1px solid black; }
-.viaje-precio { font-family: Georgia, serif; font-size: 28px; margin-bottom: 8px; }
-.viaje-precio-pagado { color: dimgray; }
-.timer { font-size: 11px; color: orange; font-weight: bold; margin-top: 4px; }
+.iata small { font-size: 9px; color: gray; }
+.tit-viaje { font-family: Georgia, serif; font-size: 18px; margin-bottom: 4px; display: flex; gap: 8px; }
+.det { font-size: 13px; color: dimgray; }
+.link-viaje { font-size: 12px; color: black; text-decoration: none; border-bottom: 1px solid black; }
+.precio { font-family: Georgia, serif; font-size: 28px; margin-bottom: 8px; }
+.precio-pagado { color: dimgray; }
+.hora { font-size: 11px; color: orange; font-weight: bold; }
 
 @media (max-width: 900px) {
   .grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 720px) {
-  .reg-wrap { flex-direction: column; }
-  .reg-pitch,
-  .reg-box { width: 100%; }
-  .reg-box { border-left: 1px solid lightgray; border-top: none; }
+  .reg-wrap2 { flex-direction: column; }
+  .reg-side,
+  .reg-box2 { width: 100%; }
+  .reg-box2 { border-left: 1px solid lightgray; border-top: none; }
 }
 
 @media (max-width: 600px) {
-  nav { padding: 0 12px; }
   .nav-centro { display: none; }
-  main { padding: 20px 14px 28px; }
+  nav { padding: 0 10px; }
+  .grid { grid-template-columns: 1fr; }
   .buscador { flex-direction: column; }
   .buscador input { border-right: none; border-bottom: 1px solid lightgray; }
-  .grid { grid-template-columns: 1fr; }
   .cab { flex-direction: column; align-items: flex-start; }
   .tira-negra { flex-direction: column; }
-  .tira-form input { width: 100%; }
 }
