@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar — DiverJet</title>
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    body { background: var(--gris); }
+    .login-wrap {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+    .login-box {
+      background: var(--blanco);
+      border: 1px solid var(--gris-borde);
+      padding: 40px 36px;
+      width: 100%;
+      max-width: 400px;
+    }
+    .login-titulo {
+      font-family: var(--font-titulo);
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .login-sub { font-size: 13px; color: var(--gris-texto); margin-bottom: 28px; }
+    .divider { height: 1px; background: var(--gris-borde); margin: 24px 0; }
+    .forgot { display: block; text-align: right; font-size: 12px; color: var(--gris-texto); text-decoration: none; margin-top: -8px; margin-bottom: 20px; }
+    .forgot:hover { color: var(--negro); }
+    .login-pie { font-size: 13px; color: var(--gris-texto); text-align: center; }
+    .login-pie a { color: var(--negro); font-weight: 700; text-decoration: none; }
+    .login-pie a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">Diver<b>Jet</b></a>
+  <div class="nav-centro">
+    <a href="index.html">Inicio</a>
+    <a href="ofertas.html">Ofertas</a>
+    <a href="consejos.html">Consejos</a>
+  </div>
+  <a href="login.html" class="nav-btn">Mi cuenta</a>
+</nav>
+
+<div class="login-wrap">
+  <div class="login-box">
+    <div class="login-titulo">Bienvenido de vuelta.</div>
+    <div class="login-sub">Entra para ver tus viajes y gestionar tu cuenta.</div>
+
+    <form action="perfil.html">
+      <div class="form-grupo">
+        <label>Correo electrónico</label>
+        <input type="email" placeholder="tu@correo.com" required>
+      </div>
+      <div class="form-grupo">
+        <label>Contraseña</label>
+        <input type="password" placeholder="••••••••" required>
+      </div>
+      <a href="#" class="forgot">¿Olvidaste la contraseña?</a>
+      <button type="submit" class="btn btn-negro btn-w" style="padding: 13px;">Entrar →</button>
+    </form>
+
+    <div class="divider"></div>
+    <div class="login-pie">¿Sin cuenta? <a href="registro.html">Regístrate gratis</a></div>
+  </div>
+</div>
+
+<div class="pie">
+  <a href="index.html" class="pie-logo">Diver<b>Jet</b></a>
+  <span>© 2024 · hola@diverjet.com</span>
+  <ul class="pie-links">
+    <li><a href="#">Aviso legal</a></li>
+    <li><a href="#">Privacidad</a></li>
+  </ul>
+</div>
+
+</body>
+</html>

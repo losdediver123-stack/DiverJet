@@ -1,0 +1,379 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --negro: #0a0a0a;
+  --blanco: #fafaf8;
+  --acento: #ff4d1c;
+  --gris: #f0efea;
+  --gris-borde: #e2e1da;
+  --gris-texto: #6b6b65;
+  --font-titulo: Georgia, 'Times New Roman', serif;
+  --font-cuerpo: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-cuerpo);
+  background: var(--blanco);
+  color: var(--negro);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+/* ── NAV ── */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--blanco);
+  border-bottom: 1px solid var(--gris-borde);
+  padding: 0 32px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo {
+  font-family: var(--font-titulo);
+  font-style: italic;
+  font-size: 20px;
+  color: var(--negro);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.logo b { color: var(--acento); font-style: normal; }
+
+.nav-centro {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.nav-centro a {
+  font-size: 13px;
+  color: var(--gris-texto);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.15s, color 0.15s;
+}
+.nav-centro a:hover { background: var(--gris); color: var(--negro); }
+.nav-centro a.activo { color: var(--negro); font-weight: 600; }
+
+.nav-btn {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--negro);
+  text-decoration: none;
+  border: 1.5px solid var(--negro);
+  padding: 6px 14px;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.nav-btn:hover { background: var(--negro); color: var(--blanco); }
+
+/* ── CONTENIDO PRINCIPAL ── */
+main {
+  flex: 1;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+}
+
+/* ── CABECERA DE SECCIÓN ── */
+.cab {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--gris-borde);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.cab h1, .cab h2 {
+  font-family: var(--font-titulo);
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+}
+
+.cab p {
+  font-size: 13px;
+  color: var(--gris-texto);
+}
+
+/* ── BUSCADOR ── */
+.buscador {
+  display: flex;
+  gap: 0;
+  border: 1.5px solid var(--negro);
+  margin-bottom: 32px;
+}
+
+.buscador input {
+  flex: 1;
+  padding: 11px 14px;
+  border: none;
+  border-right: 1px solid var(--gris-borde);
+  font-family: var(--font-cuerpo);
+  font-size: 14px;
+  outline: none;
+  background: var(--blanco);
+  color: var(--negro);
+  min-width: 0;
+}
+.buscador input::placeholder { color: #bbb; }
+
+.buscador button {
+  padding: 0 20px;
+  background: var(--negro);
+  color: var(--blanco);
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+.buscador button:hover { background: var(--acento); }
+
+/* ── GRID DE TARJETAS ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+/* ── TARJETA DESTINO ── */
+.card {
+  background: var(--blanco);
+  border: 1px solid var(--gris-borde);
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.card:hover { border-color: var(--negro); box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+
+.card-inv {
+  background: var(--negro);
+  color: var(--blanco);
+  border-color: var(--negro);
+}
+
+.card-head {
+  padding: 20px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-ciudad {
+  font-family: var(--font-titulo);
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.card-inv .card-ciudad { color: var(--blanco); }
+
+.card-precio {
+  font-family: var(--font-titulo);
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--acento);
+  line-height: 1;
+}
+
+.card-body {
+  padding: 12px 20px;
+  font-size: 13px;
+  color: var(--gris-texto);
+  line-height: 1.5;
+  flex: 1;
+}
+.card-inv .card-body { color: #aaa; }
+
+.card-pie {
+  padding: 12px 20px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--gris-borde);
+  gap: 8px;
+}
+.card-inv .card-pie { border-color: rgba(255,255,255,0.1); }
+
+.card-meta {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #aaa;
+}
+
+/* ── ETIQUETAS ── */
+.tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 3px 8px;
+}
+.tag-negro { background: var(--negro); color: var(--blanco); }
+.tag-acento { background: var(--acento); color: var(--blanco); }
+.tag-verde { background: #1a7a2e; color: white; }
+.tag-amarillo { background: #f59e0b; color: white; }
+.tag-gris { background: var(--gris); color: var(--gris-texto); }
+
+/* ── BOTONES ── */
+.btn {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.btn-negro { background: var(--negro); color: var(--blanco); }
+.btn-negro:hover { background: var(--acento); }
+.btn-gris { background: var(--gris); color: var(--negro); border: 1px solid var(--gris-borde); }
+.btn-gris:hover { background: var(--gris-borde); }
+.btn-outline { background: transparent; color: var(--negro); border: 1.5px solid var(--negro); }
+.btn-outline:hover { background: var(--negro); color: var(--blanco); }
+.btn-w { width: 100%; text-align: center; display: block; }
+
+/* ── FORMULARIOS ── */
+.form-grupo { margin-bottom: 16px; }
+
+.form-grupo label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 6px;
+}
+
+.form-grupo input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid var(--gris-borde);
+  font-family: var(--font-cuerpo);
+  font-size: 14px;
+  background: var(--blanco);
+  color: var(--negro);
+  outline: none;
+  transition: border-color 0.15s;
+}
+.form-grupo input:focus { border-color: var(--negro); }
+.form-grupo input::placeholder { color: #bbb; }
+
+/* ── TIRA NEGRA ── */
+.tira-negra {
+  background: var(--negro);
+  color: var(--blanco);
+  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.tira-negra p { font-size: 14px; }
+.tira-negra p b { font-family: var(--font-titulo); font-style: italic; font-size: 18px; }
+
+.tira-form {
+  display: flex;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.tira-form input {
+  padding: 9px 14px;
+  background: transparent;
+  border: none;
+  color: var(--blanco);
+  font-size: 13px;
+  outline: none;
+  width: 220px;
+}
+.tira-form input::placeholder { color: rgba(255,255,255,0.35); }
+.tira-form button {
+  padding: 9px 16px;
+  background: var(--acento);
+  border: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+
+/* ── PIE MINIMALISTA ── */
+.pie {
+  border-top: 1px solid var(--gris-borde);
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--gris-texto);
+}
+
+.pie-logo {
+  font-family: var(--font-titulo);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--negro);
+  text-decoration: none;
+}
+.pie-logo b { color: var(--acento); font-style: normal; }
+
+.pie-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.pie-links a {
+  color: var(--gris-texto);
+  text-decoration: none;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.pie-links a:hover { color: var(--negro); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .grid-2 { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  nav { padding: 0 16px; }
+  .nav-centro { display: none; }
+  main { padding: 20px 16px 32px; }
+  .buscador { flex-direction: column; }
+  .buscador input { border-right: none; border-bottom: 1px solid var(--gris-borde); }
+  .buscador button { padding: 12px; }
+  .grid { grid-template-columns: 1fr; }
+  .cab { flex-direction: column; gap: 4px; }
+  .tira-negra { flex-direction: column; align-items: flex-start; }
+  .tira-form input { width: 100%; }
+  .pie { flex-direction: column; align-items: flex-start; }
+}

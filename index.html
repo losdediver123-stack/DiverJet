@@ -1,142 +1,179 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DiverJet | Viajes low cost</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="menu">
-      <div class="logo">DiverJet</div>
-      <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#ofertas">Ofertas</a>
-        <a href="#consejos">Consejos</a>
-      </nav>
-      <a class="cuenta" href="#contacto">Mi Cuenta</a>
-    </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DiverJet — Vuela barato por Europa</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
 
-    <main id="inicio">
-      <section class="portada">
-        <div class="fondo-portada"></div>
-        <div class="contenido-portada">
-          <h1>Viaja barato por Europa</h1>
-          <p>Ofertas reales de vuelos diarios para estudiantes.</p>
-          <form class="buscador">
-            <input type="text" placeholder="Origen (ej. Madrid)" />
-            <input type="text" placeholder="Destino (ej. Londres)" />
-            <input type="text" placeholder="Fecha deseada" />
-            <button type="button">Buscar Vuelos</button>
-          </form>
+<nav>
+  <a href="index.html" class="logo">Diver<b>Jet</b></a>
+  <div class="nav-centro">
+    <a href="index.html" class="activo">Inicio</a>
+    <a href="ofertas.html">Ofertas</a>
+    <a href="consejos.html">Consejos</a>
+  </div>
+  <a href="login.html" class="nav-btn">Mi cuenta</a>
+</nav>
+
+<main>
+  <div class="cab">
+    <h1>Vuela lejos. <em>Gasta poco.</em></h1>
+    <p>Escapadas low cost para estudiantes</p>
+  </div>
+
+  <div class="buscador">
+    <input type="text" placeholder="Origen — Madrid, BCN...">
+    <input type="text" placeholder="Destino — Roma, Berlín...">
+    <input type="text" placeholder="¿Cuándo?">
+    <button>Buscar →</button>
+  </div>
+
+  <div class="cab" style="margin-top: 8px;">
+    <h2>Chollos del momento</h2>
+    <p>Selección editorial semanal</p>
+  </div>
+
+  <div class="grid" style="margin-bottom: 32px;">
+
+    <div class="card card-inv">
+      <div class="card-head">
+        <div>
+          <div style="margin-bottom:8px;"><span class="tag tag-acento">Top ventas</span></div>
+          <div class="card-ciudad">Lisboa</div>
+          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-top:4px;">LIS · Portugal</div>
         </div>
-      </section>
-
-      <section id="ofertas" class="seccion">
-        <h2>Chollos del momento</h2>
-        <p class="subtitulo">Nuestra selección editorial con las mejores escapadas.</p>
-
-        <div class="rejilla">
-          <article class="tarjeta">
-            <img src="fotos/roma.svg" alt="Vista ilustrada de Roma" />
-            <span class="precio">99€</span>
-            <h3>Roma Imprescindible</h3>
-            <p>Vuelo directo desde Madrid + 3 noches en hotel céntrico.</p>
-            <a href="#">Ver detalles</a>
-          </article>
-
-          <article class="tarjeta">
-            <img src="fotos/lisboa.svg" alt="Vista ilustrada de Lisboa" />
-            <span class="precio">75€</span>
-            <h3>Escapada a Lisboa</h3>
-            <p>Vuelo + alojamiento en zona céntrica. Ideal para fin de semana.</p>
-            <a href="#">¡Reservar ya!</a>
-          </article>
-
-          <article class="tarjeta">
-            <img src="fotos/paris.svg" alt="Vista ilustrada de París" />
-            <span class="precio">120€</span>
-            <h3>París Low Cost</h3>
-            <p>Vuelo ida y vuelta + 2 noches cerca de Montmartre.</p>
-            <a href="#">Ver detalles</a>
-          </article>
-
-          <article class="tarjeta">
-            <img src="fotos/budapest.svg" alt="Vista ilustrada de Budapest" />
-            <span class="precio">89€</span>
-            <h3>Budapest Mágico</h3>
-            <p>3 días de hotel y vuelo en una ciudad llena de historia.</p>
-            <a href="#">Ver detalles</a>
-          </article>
-
-          <article class="tarjeta">
-            <img src="fotos/praga.svg" alt="Vista ilustrada de Praga" />
-            <span class="precio">115€</span>
-            <h3>Praga de Cuento</h3>
-            <p>Viaje organizado con alojamiento privado cerca del centro.</p>
-            <a href="#">Ver detalles</a>
-          </article>
-
-          <article class="tarjeta">
-            <img src="fotos/berlin.svg" alt="Vista ilustrada de Berlín" />
-            <span class="precio">65€</span>
-            <h3>Berlín Express</h3>
-            <p>Promoción para escapada rápida de 2 días a precio mínimo.</p>
-            <a href="#">Ver detalles</a>
-          </article>
-        </div>
-      </section>
-
-      <section id="consejos" class="seccion">
-        <h2>Consejos de experto</h2>
-        <p class="subtitulo">Haz que tu presupuesto te rinda mucho más.</p>
-
-        <div class="rejilla consejos">
-          <article class="tip">
-            <h3>Viajar entre semana</h3>
-            <p>Los martes y miércoles suelen tener mejores precios que el fin de semana.</p>
-          </article>
-          <article class="tip">
-            <h3>Solo mochila</h3>
-            <p>Lleva solo lo necesario para ahorrar en tasas de equipaje facturado.</p>
-          </article>
-          <article class="tip">
-            <h3>Aeropuertos secundarios</h3>
-            <p>Muchas veces tienen vuelos más baratos y menos saturación.</p>
-          </article>
-          <article class="tip">
-            <h3>Regla de 3 meses</h3>
-            <p>Para Europa, reservar con 90 días de antelación suele funcionar bien.</p>
-          </article>
-          <article class="tip">
-            <h3>Snacks de casa</h3>
-            <p>Evita comprar todo en aeropuerto y gana margen para el viaje.</p>
-          </article>
-          <article class="tip">
-            <h3>Tarjetas sin comisiones</h3>
-            <p>Te ahorran bastante dinero cuando pagas en moneda extranjera.</p>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <div id="contacto" class="pie">
-      <div>
-        <h3>DiverJet</h3>
-        <p>© 2026 DiverJet. Mobility for the next generation.</p>
+        <div class="card-precio">75€</div>
       </div>
-      <div>
-        <h4>Contacto</h4>
-        <p>Email: hola@diverjet.com</p>
-        <p>Soporte: ayuda@diverjet.com</p>
-        <p>Tel: +34 900 123 456</p>
-      </div>
-      <div class="links-pie">
-        <a href="#">Contacto</a>
-        <a href="#">Aviso legal</a>
-        <a href="#">Privacidad</a>
-        <a href="#">Cookies</a>
+      <div class="card-body">Vuelo + alojamiento cerca del Barrio Alto. Los precios llevan semanas subiendo — este no dura.</div>
+      <div class="card-pie">
+        <span class="card-meta">Directo · 2 noches</span>
+        <a href="viajes/reserva-roma-imprescindible.html" class="btn btn-negro">Reservar →</a>
       </div>
     </div>
-  </body>
+
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <div style="margin-bottom:8px;"><span class="tag tag-negro">Recomendado</span></div>
+          <div class="card-ciudad">Roma</div>
+          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#aaa;margin-top:4px;">FCO · Italia</div>
+        </div>
+        <div class="card-precio">99€</div>
+      </div>
+      <div class="card-body">Vuelo directo desde Madrid + 3 noches en hotel céntrico. Fin de semana perfecto.</div>
+      <div class="card-pie">
+        <span class="card-meta">Directo · 3 noches</span>
+        <a href="viajes/reserva-roma-imprescindible.html" class="btn btn-gris">Ver más →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <div class="card-ciudad">Berlín</div>
+          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#aaa;margin-top:4px;">BER · Alemania</div>
+        </div>
+        <div class="card-precio">65€</div>
+      </div>
+      <div class="card-body">Vuelo ida y vuelta en promoción. Escapada rápida de 2 días a puro ambiente alemán.</div>
+      <div class="card-pie">
+        <span class="card-meta">Directo · 2 noches</span>
+        <a href="viajes/reserva-berl-n-express.html" class="btn btn-gris">Ver más →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <div class="card-ciudad">Budapest</div>
+          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#aaa;margin-top:4px;">BUD · Hungría</div>
+        </div>
+        <div class="card-precio">89€</div>
+      </div>
+      <div class="card-body">3 días de hotel cerca del centro. Una de las ciudades más bonitas de Europa a precio de autobús.</div>
+      <div class="card-pie">
+        <span class="card-meta">Directo · 3 noches</span>
+        <a href="viajes/reserva-budapest-m-gico.html" class="btn btn-gris">Ver más →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <div class="card-ciudad">Praga</div>
+          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#aaa;margin-top:4px;">PRG · Chequia</div>
+        </div>
+        <div class="card-precio">115€</div>
+      </div>
+      <div class="card-body">Alojamiento privado cerca del reloj astronómico + seguro básico de viaje incluido.</div>
+      <div class="card-pie">
+        <span class="card-meta">Directo · 3 noches</span>
+        <a href="viajes/reserva-praga-de-cuento.html" class="btn btn-gris">Ver más →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <div class="card-ciudad">París</div>
+          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#aaa;margin-top:4px;">CDG · Francia</div>
+        </div>
+        <div class="card-precio">120€</div>
+      </div>
+      <div class="card-body">Vuelo ida y vuelta + 2 noches cerca de Montmartre. Oferta limitada para estudiantes.</div>
+      <div class="card-pie">
+        <span class="card-meta">Directo · 2 noches</span>
+        <a href="viajes/reserva-par-s-low-cost.html" class="btn btn-gris">Ver más →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cab">
+    <h2>Seis cosas que aprende quien viaja mucho</h2>
+    <a href="consejos.html" style="font-size:13px;color:var(--gris-texto);text-decoration:none;">Ver todos →</a>
+  </div>
+
+  <div class="grid">
+    <div style="border-top: 2px solid var(--negro); padding-top: 14px;">
+      <div style="font-size:11px;color:#aaa;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">01</div>
+      <div style="font-family:var(--font-titulo);font-size:17px;font-weight:bold;margin-bottom:8px;">Vuela entre semana</div>
+      <p style="font-size:13px;color:var(--gris-texto);">Los martes y miércoles pueden ser hasta un 40% más baratos. Tú eres estudiante: aprovéchalo.</p>
+    </div>
+    <div style="border-top: 2px solid var(--negro); padding-top: 14px;">
+      <div style="font-size:11px;color:#aaa;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">02</div>
+      <div style="font-family:var(--font-titulo);font-size:17px;font-weight:bold;margin-bottom:8px;">Solo mochila</div>
+      <p style="font-size:13px;color:var(--gris-texto);">35-40L bien organizada = cero gastos de facturación. Ahorra entre 20€ y 60€ por trayecto.</p>
+    </div>
+    <div style="border-top: 2px solid var(--negro); padding-top: 14px;">
+      <div style="font-size:11px;color:#aaa;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">03</div>
+      <div style="font-family:var(--font-titulo);font-size:17px;font-weight:bold;margin-bottom:8px;">Aeropuertos secundarios</div>
+      <p style="font-size:13px;color:var(--gris-texto);">Volar a un aeropuerto alternativo puede salir a mitad de precio. Solo planea bien el transporte.</p>
+    </div>
+  </div>
+
+</main>
+
+<div class="tira-negra">
+  <p><b>Las mejores ofertas, antes que nadie.</b><br><span style="font-size:13px;color:#aaa;">Sin spam. Una vez al mes.</span></p>
+  <div class="tira-form">
+    <input type="email" placeholder="tu@correo.com">
+    <button>Apuntarme</button>
+  </div>
+</div>
+
+<div class="pie">
+  <a href="index.html" class="pie-logo">Diver<b>Jet</b></a>
+  <span>© 2024 · hola@diverjet.com · +34 900 123 456</span>
+  <ul class="pie-links">
+    <li><a href="#">Aviso legal</a></li>
+    <li><a href="#">Privacidad</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</div>
+
+</body>
 </html>
