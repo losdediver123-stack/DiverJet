@@ -1,91 +1,82 @@
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-:root {
-  --negro: #0a0a0a;
-  --blanco: #fafaf8;
-  --acento: #ff4d1c;
-  --gris: #f0efea;
-  --gris-borde: #e2e1da;
-  --gris-texto: #6b6b65;
-  --font-titulo: Georgia, 'Times New Roman', serif;
-  --font-cuerpo: system-ui, -apple-system, sans-serif;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  color: black;
 }
 
-body {
-  font-family: var(--font-cuerpo);
-  background: var(--blanco);
-  color: var(--negro);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.5;
+body.auth {
+  background: whitesmoke;
 }
 
 body.auth { background: var(--gris); }
 
 nav {
-  position: sticky; top: 0; z-index: 100;
-  background: var(--blanco);
-  border-bottom: 1px solid var(--gris-borde);
-  padding: 0 32px;
   height: 56px;
+  padding: 0 20px;
+  border-bottom: 1px solid lightgray;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
 }
 
 .logo {
-  font-family: var(--font-titulo);
-  font-style: italic;
+  font-family: Georgia, serif;
   font-size: 20px;
-  color: var(--negro);
+  font-style: italic;
   text-decoration: none;
-  white-space: nowrap;
+  color: black;
 }
-.logo b { color: var(--acento); font-style: normal; }
+
+.logo b { color: orangered; font-style: normal; }
+
+.nav-centro { display: flex; gap: 8px; }
 
 .nav-centro { display: flex; gap: 8px; align-items: center; }
 .nav-centro a {
-  font-size: 13px;
-  color: var(--gris-texto);
   text-decoration: none;
+  color: dimgray;
+  font-size: 13px;
+  padding: 6px 10px;
   padding: 6px 12px;
   border-radius: 4px;
 }
-.nav-centro a:hover { background: var(--gris); color: var(--negro); }
-.nav-centro a.activo { color: var(--negro); font-weight: 600; }
+
+.nav-centro .activo { color: black; font-weight: bold; }
 
 .nav-btn {
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  color: var(--negro);
+  border: 1px solid black;
+  padding: 6px 10px;
   text-decoration: none;
+  color: black;
+  font-size: 12px;
   border: 1.5px solid var(--negro);
   padding: 6px 14px;
   white-space: nowrap;
 }
-.nav-btn:hover { background: var(--negro); color: var(--blanco); }
 
 main {
-  flex: 1;
   max-width: 1100px;
-  width: 100%;
   margin: 0 auto;
-  padding: 32px 24px 48px;
+  padding: 24px 16px 36px;
 }
 
 .cab {
-  margin-bottom: 24px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--gris-borde);
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
   display: flex;
-  align-items: baseline;
   justify-content: space-between;
-  gap: 16px;
+  align-items: baseline;
+  gap: 10px;
 }
+
+.cab2 { margin-top: 8px; }
+
+.cab h1,
+.cab h2 {
+  margin: 0;
+  font-family: Georgia, serif;
 .cab h1, .cab h2 {
   font-family: var(--font-titulo);
   font-size: 28px;
@@ -93,26 +84,45 @@ main {
 }
 .cab p { font-size: 13px; color: var(--gris-texto); }
 
+.cab p { margin: 0; font-size: 13px; color: dimgray; }
+
+.link { color: dimgray; text-decoration: none; font-size: 13px; }
+
 .buscador {
+  border: 1px solid black;
   display: flex;
+  margin-bottom: 22px;
   border: 1.5px solid var(--negro);
   margin-bottom: 32px;
 }
 .buscador input {
   flex: 1;
-  padding: 11px 14px;
   border: none;
+  border-right: 1px solid lightgray;
+  padding: 10px;
+}
+
   border-right: 1px solid var(--gris-borde);
   font-size: 14px;
   background: var(--blanco);
   min-width: 0;
 }
 .buscador button {
-  padding: 0 20px;
-  background: var(--negro);
-  color: var(--blanco);
   border: none;
+  background: black;
+  color: white;
   font-size: 12px;
+  font-weight: bold;
+  padding: 0 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.of-grid { margin-bottom: 28px; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.8px;
@@ -123,18 +133,37 @@ main {
 .grid-2 { grid-template-columns: repeat(2, 1fr); }
 
 .card {
-  background: var(--blanco);
-  border: 1px solid var(--gris-borde);
+  border: 1px solid lightgray;
+  background: white;
   display: flex;
   flex-direction: column;
 }
+
+.card-inv { background: black; color: white; }
 .card:hover { border-color: var(--negro); }
 .card-inv { background: var(--negro); color: var(--blanco); border-color: var(--negro); }
 
 .card-head {
-  padding: 20px 20px 0;
+  padding: 16px 16px 0;
   display: flex;
   justify-content: space-between;
+}
+
+.etq { margin-bottom: 8px; }
+
+.card-ciudad { font-family: Georgia, serif; font-size: 22px; font-weight: bold; }
+.airport { font-size: 11px; color: gray; margin-top: 4px; }
+.card-precio { font-family: Georgia, serif; font-size: 28px; color: orangered; font-weight: bold; }
+
+.card-body {
+  padding: 10px 16px;
+  font-size: 13px;
+  color: dimgray;
+  flex: 1;
+}
+
+.card-inv .card-body { color: gray; }
+
   align-items: flex-start;
 }
 .card-ciudad {
@@ -156,13 +185,52 @@ main {
 .card-body { padding: 12px 20px; font-size: 13px; color: var(--gris-texto); flex: 1; }
 .card-inv .card-body { color: #aaa; }
 .card-pie {
-  padding: 12px 20px 16px;
+  border-top: 1px solid lightgray;
+  padding: 12px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid var(--gris-borde);
-  gap: 8px;
+  gap: 10px;
 }
+
+.card-meta { font-size: 11px; color: gray; }
+
+.tag { font-size: 10px; font-weight: bold; padding: 3px 8px; }
+.tag-acento { background: orangered; color: white; }
+.tag-negro { background: black; color: white; }
+.tag-amarillo { background: orange; color: white; }
+.tag-verde { background: green; color: white; }
+
+.btn { text-decoration: none; font-size: 12px; font-weight: bold; padding: 8px 12px; }
+.btn-negro { background: black; color: white; }
+.btn-gris { background: whitesmoke; color: black; border: 1px solid lightgray; }
+.btn-w { display: block; width: 100%; text-align: center; }
+
+.tip {
+  border-top: 2px solid black;
+  padding-top: 12px;
+}
+
+.tip-num { font-size: 11px; color: gray; margin-bottom: 8px; }
+.tip-titulo { font-family: Georgia, serif; font-size: 18px; font-weight: bold; margin-bottom: 8px; }
+.tip-texto { font-size: 13px; color: dimgray; }
+.inicio .tip-titulo { font-size: 17px; }
+
+.resumen {
+  background: black;
+  color: white;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.res-num { font-family: Georgia, serif; font-size: 52px; color: orangered; font-weight: bold; }
+.res-tit { font-family: Georgia, serif; font-size: 18px; font-weight: bold; margin-bottom: 4px; }
+
+.mini { font-size: 13px; color: gray; }
+
 .card-meta { font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: #aaa; }
 
 .tag { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 3px 8px; }
@@ -197,15 +265,42 @@ main {
 }
 
 .tira-negra {
-  background: var(--negro);
-  color: var(--blanco);
-  padding: 20px 32px;
+  background: black;
+  color: white;
+  padding: 18px 20px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 10px;
   flex-wrap: wrap;
 }
+
+.tira-form {
+  display: flex;
+  border: 1px solid gray;
+}
+
+.tira-form input {
+  border: none;
+  background: transparent;
+  color: white;
+  padding: 9px 12px;
+}
+
+.tira-form button {
+  border: none;
+  background: orangered;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 9px 12px;
+}
+
+.campo { margin-bottom: 14px; }
+.campo label { display: block; font-size: 11px; font-weight: bold; margin-bottom: 6px; }
+.campo input { width: 100%; border: 1px solid lightgray; padding: 10px 12px; }
+
+.auth-wrap,
+.reg-wrap2 {
 .tira-negra p { font-size: 14px; }
 .tira-negra p b { font-family: var(--font-titulo); font-style: italic; font-size: 18px; }
 .note { font-size: 13px; color: #aaa; }
@@ -217,13 +312,100 @@ main {
   border-top: 1px solid var(--gris-borde);
   padding: 16px 32px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-  font-size: 12px;
-  color: var(--gris-texto);
+  justify-content: center;
+  padding: 36px 16px;
 }
+
+.auth-wrap { align-items: center; }
+
+.auth-box,
+.reg-box2 {
+  background: white;
+  border: 1px solid lightgray;
+  padding: 32px 26px;
+}
+
+.auth-box { width: 100%; max-width: 400px; }
+.reg-box2 { width: 380px; border-left: none; }
+
+.tit-form { font-family: Georgia, serif; font-size: 26px; font-weight: bold; margin-bottom: 4px; }
+.sub-form { font-size: 13px; color: dimgray; margin-bottom: 24px; }
+.pie-form { font-size: 13px; color: dimgray; text-align: center; }
+.pie-form a { color: black; font-weight: bold; text-decoration: none; }
+
+.divider { height: 1px; background: lightgray; margin: 22px 0; }
+.forgot { display: block; text-align: right; font-size: 12px; color: dimgray; margin: -8px 0 18px; text-decoration: none; }
+.auth-box .btn { padding: 12px; }
+.reg-box2 .btn { padding: 12px; margin-top: 4px; }
+
+.reg-side {
+  width: 320px;
+  background: black;
+  color: white;
+  padding: 32px 26px;
+}
+
+.reg-side h2 { margin: 0 0 16px; font-family: Georgia, serif; font-size: 26px; }
+.reg-side h2 em { color: orangered; }
+
+.pitch-list { margin: 0; padding: 0; list-style: none; }
+.pitch-list li { font-size: 13px; color: gray; margin-bottom: 10px; }
+.pitch-list li::before { content: "→ "; color: orangered; }
+
+.filtros { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+.filtro-label { font-size: 11px; color: dimgray; font-weight: bold; }
+.filtro-btn { font-size: 12px; border: 1px solid lightgray; background: white; padding: 5px 10px; }
+.filtro-btn.on { background: black; color: white; border-color: black; }
+.contador { font-size: 12px; color: dimgray; margin-bottom: 14px; }
+
+.sub {
+  font-size: 11px;
+  color: dimgray;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.sub.mt { margin-top: 26px; }
+.linea { flex: 1; height: 1px; background: lightgray; }
+
+.fila {
+  border: 1px solid lightgray;
+  padding: 16px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.alerta { border-color: orange; }
+.info { display: flex; gap: 14px; align-items: center; }
+.iata {
+  width: 60px;
+  height: 60px;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.iata small { font-size: 9px; color: gray; }
+.tit-viaje { font-family: Georgia, serif; font-size: 18px; margin-bottom: 4px; display: flex; gap: 8px; }
+.det { font-size: 13px; color: dimgray; }
+.link-viaje { font-size: 12px; color: black; text-decoration: none; border-bottom: 1px solid black; }
+.precio { font-family: Georgia, serif; font-size: 28px; margin-bottom: 8px; }
+.precio-pagado { color: dimgray; }
+.hora { font-size: 11px; color: orange; font-weight: bold; }
+
 .pie-logo { font-family: var(--font-titulo); font-style: italic; font-weight: bold; font-size: 16px; color: var(--negro); text-decoration: none; }
 .pie-logo b { color: var(--acento); font-style: normal; }
 .pie-links { display: flex; gap: 20px; list-style: none; }
@@ -298,7 +480,13 @@ main {
 
 @media (max-width: 900px) {
   .grid { grid-template-columns: repeat(2, 1fr); }
-  .grid-2 { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .reg-wrap2 { flex-direction: column; }
+  .reg-side,
+  .reg-box2 { width: 100%; }
+  .reg-box2 { border-left: 1px solid lightgray; border-top: none; }
 }
 
 @media (max-width: 720px) {
@@ -308,15 +496,11 @@ main {
 }
 
 @media (max-width: 600px) {
-  nav { padding: 0 16px; }
   .nav-centro { display: none; }
-  main { padding: 20px 16px 32px; }
-  .buscador { flex-direction: column; }
-  .buscador input { border-right: none; border-bottom: 1px solid var(--gris-borde); }
-  .buscador button { padding: 12px; }
+  nav { padding: 0 10px; }
   .grid { grid-template-columns: 1fr; }
-  .cab { flex-direction: column; gap: 4px; }
-  .tira-negra { flex-direction: column; align-items: flex-start; }
-  .tira-form input { width: 100%; }
-  .pie { flex-direction: column; align-items: flex-start; }
+  .buscador { flex-direction: column; }
+  .buscador input { border-right: none; border-bottom: 1px solid lightgray; }
+  .cab { flex-direction: column; align-items: flex-start; }
+  .tira-negra { flex-direction: column; }
 }
